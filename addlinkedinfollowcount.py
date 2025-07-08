@@ -2,7 +2,7 @@ import requests
 import csv
 
 
-API_KEY = "RIABWwTL3cx8JjKTkKDl_A"
+
 
 
 def enrich_linkedin(linkedin_url):
