@@ -4,8 +4,7 @@ client_id = "YOUR_CLIENT_ID"
 client_secret = "YOUR_CLIENT_SECRET"
 
 url = "https://api.producthunt.com/v2/oauth/token"
-client_id='MTSirDr2G9cjl4JQHFW09YYYvyoh4SaxH4qFJIx1Lsc'
-client_secret='_BMbEwqr-sT-8j4D2SuHyysA3YhXU2TaHuD2kGUjzeI'
+
 data = {
     "client_id": client_id,
     "client_secret": client_secret,
