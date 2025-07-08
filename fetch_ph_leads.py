@@ -2,7 +2,6 @@ import requests
 import csv
 import os
 
-ACCESS_TOKEN = 'GP8apsXTdNnxqgxKDlK9NMGBZ5tL0pgIGqDDYzIJ1ug'
 headers = {
     'Authorization': f'Bearer {ACCESS_TOKEN}',
     'Content-Type': 'application/json',
