@@ -1,46 +1,4 @@
-# import requests
-# from urllib.parse import urlparse
-# import csv
 
-
-# def resolve_redirect(url):
-#     try:
-#         if not url.startswith("http"):
-#             url = "https://" + url  # 🔧 Ensure it's a valid absolute URL
-#         res = requests.get(url, allow_redirects=True, timeout=10)
-#         return res.url
-#     except Exception as e:
-#         print(f"⚠️ Redirect failed for {url}: {e}")
-#         return ""
-
-# def extract_domain(url):
-#     try:
-#         parsed = urlparse(url)
-#         return parsed.netloc.replace("www.", "")
-#     except:
-#         return ""
-
-# input_file = "producthunt_leads.csv"
-# output_file = "cleaned_leads.csv"
-
-# with open(input_file, "r", encoding="utf-8") as infile, open(output_file, "w", newline='', encoding="utf-8") as outfile:
-#     reader = csv.DictReader(infile)
-#     fieldnames = reader.fieldnames + ["resolved_website", "clean_domain"]
-#     writer = csv.DictWriter(outfile, fieldnames=fieldnames)
-#     writer.writeheader()
-
-#     for row in reader:
-#         raw_url = row.get("domain", "") or row.get("website", "")  # fallback
-#         resolved_url = resolve_redirect(raw_url)
-#         clean_domain = extract_domain(resolved_url)
-
-#         row["resolved_website"] = resolved_url
-#         row["clean_domain"] = clean_domain
-
-#         writer.writerow(row)
-#         print(f"✅ Processed: {raw_url} → {clean_domain}")
-
-# print(f"\n✅ Done. Cleaned CSV saved to: {output_file}")
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
