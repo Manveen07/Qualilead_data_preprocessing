@@ -1,8 +1,7 @@
 import requests
 import csv
 
-GOOGLE_API_KEY = "AIzaSyChHsgpa2BcTwsMh2ZdFnViHUTYgtMOS28"
-SEARCH_ENGINE_ID = "14c8f42709fc94d89"
+
 
 def find_linkedin(company_name):
     query = f"site:linkedin.com/company {company_name}"
